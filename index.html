@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calc">
+        <div class="header">Simple Calculator</div>
+        <div class="display" id="result">0</div>
+        <div class="Container">
+            <div class="rows">
+                <div id="clear" onclick="location.reload()" class=" keys1">AC</div>
+                <div id="delete" onclick="remove()" class=" keys2">DELETE</div>
+                <div id="equal" onclick="calc()" class=" keys3 equal">=</div>
+                <div id="divide" onclick="add('/')" class=" keys4">/</div>
+            </div>
+            <div class="rows">
+                <div id="7" onclick="add('7')" class=" keys1">7</div>
+                <div id="8" onclick="add('8')" class=" keys2">8</div>
+                <div id="9" onclick="add('9')" class=" keys3">9</div>
+                <div id="multiply" onclick="add('*')" class=" keys4">*</div>
+            </div>
+            <div class="rows">
+                <div id="4" onclick="add('4')" class=" keys1">4</div>
+                <div id="5" onclick="add('5')" class=" keys2 orange">5</div>
+                <div id="6" onclick="add('6')" class=" keys3">6</div>
+                <div id="subtract" onclick="add('-')" class=" keys4">-</div>
+            </div>
+            <div class="rows">
+                <div id="1" onclick="add('1')" class=" keys1">1</div>
+                <div id="2" onclick="add('2')" class=" keys2">2</div>
+                <div id="3" onclick="add('3')" class=" keys3">3</div>
+                <div id="add" onclick="add('+')" class=" keys4">+</div>
+            </div>
+            <div class="rows">
+                <div id="0" onclick="add('0')" class="zero">0</div>
+                <div id="dot" onclick="add('.')" class=" keys3">.</div>
+                <div id="percentile" onclick="add('%')" class=" keys4">%</div>
+            </div>
+                    </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
